@@ -40,7 +40,7 @@ export default function SettingsPage() {
         <p className="text-slate-500 text-sm mt-1">Administra la configuracion del sistema</p>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-slate-100 space-y-6">
+      <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-card space-y-6">
         <div className="flex items-center gap-2 pb-4 border-b border-slate-100">
           <Building className="w-5 h-5 text-emerald-500" />
           <h2 className="text-lg font-bold text-slate-800">Informacion del Hospital</h2>
@@ -85,7 +85,7 @@ export default function SettingsPage() {
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-slate-100 space-y-6">
+      <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-card space-y-6">
         <div className="flex items-center gap-2 pb-4 border-b border-slate-100">
           <Globe className="w-5 h-5 text-blue-500" />
           <h2 className="text-lg font-bold text-slate-800">Horario y Citas</h2>
@@ -135,7 +135,7 @@ export default function SettingsPage() {
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-slate-100 space-y-6">
+      <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-card space-y-6">
         <div className="flex items-center gap-2 pb-4 border-b border-slate-100">
           <Bell className="w-5 h-5 text-amber-500" />
           <h2 className="text-lg font-bold text-slate-800">Notificaciones</h2>

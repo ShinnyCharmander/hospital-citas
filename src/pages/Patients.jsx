@@ -24,8 +24,8 @@ export default function Patients() {
         <p className="text-slate-500 text-sm mt-1">{patients.length} pacientes registrados</p>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 border border-slate-100">
-        <div className="flex items-center bg-slate-50 rounded-xl px-4 py-2.5 border border-slate-200 mb-6">
+      <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-card">
+        <div className="flex items-center bg-slate-50 rounded-xl px-4 py-2.5 border border-slate-200 mb-6 focus-within:ring-2 focus-within:ring-emerald-500/30 focus-within:bg-white transition-all">
           <Search className="w-4 h-4 text-slate-400 mr-2" />
           <input
             type="text"
@@ -42,7 +42,7 @@ export default function Patients() {
             const isExpanded = expanded === patient.id;
 
             return (
-              <div key={patient.id} className="bg-slate-50 rounded-xl border border-slate-100 hover:border-emerald-200 transition-all">
+              <div key={patient.id} className="bg-slate-50 rounded-xl border border-slate-100 hover:border-emerald-200 hover:shadow-card transition-all">
                 <button
                   onClick={() => setExpanded(isExpanded ? null : patient.id)}
                   className="w-full p-4 text-left flex items-center justify-between"

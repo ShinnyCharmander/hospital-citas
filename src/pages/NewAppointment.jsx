@@ -68,7 +68,7 @@ export default function NewAppointment() {
   if (success) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="bg-white rounded-2xl p-12 border border-slate-100 text-center max-w-md">
+        <div className="bg-white rounded-2xl p-8 sm:p-12 border border-slate-100 shadow-card text-center max-w-md">
           <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle className="w-10 h-10 text-emerald-500" />
           </div>
@@ -89,7 +89,7 @@ export default function NewAppointment() {
         <p className="text-slate-500 text-sm mt-1">Agenda una nueva cita medica</p>
       </div>
 
-      <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-6 border border-slate-100 space-y-6">
+      <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-100 shadow-card space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-sm font-semibold text-slate-700 mb-2">
